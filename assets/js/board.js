@@ -1,7 +1,7 @@
 class Card {
   constructor(text) {
     this.text = text;
-    this.id == ++Card.lastId;
+    this.id = ++Card.lastId;
   }
 }
 
@@ -60,7 +60,6 @@ class Board {
       list.addCard(cardText);
     }
   }
-
 
   editCard(cardId, cardText) {
     this.lists.forEach(function(list) {
